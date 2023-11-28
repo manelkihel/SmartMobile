@@ -1,0 +1,86 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F0F8FF;
+    color: #000000;
+}
+
+/*header {
+    background-color: #045db7;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}*/
+
+header {
+    background-image: url('arrière-plan.jpg'); /* Chemin vers votre image */
+    background-size: cover; /* Ajuste l'image pour couvrir entièrement l'espace */
+    background-position: center; /* Centre l'image */
+    text-align: center; /* Centre le texte à l'intérieur */
+    color: white; /* Change la couleur du texte en blanc, ajustez selon votre image */
+    height: 100%; /* Ajustez cette valeur selon vos besoins */
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 139, 0.2);
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-section h3 {
+    color: #0c68c5;
+}
+
+input[type="text"], select {
+    width: 50%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #0a58a6;
+    border-radius: 4px;
+}
+
+input[type="button"] {
+    background-color: #0b75df;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="button"]:hover {
+    background-color: #0d3bc5;
+}
+
+#detailsVoyage {
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #F0F8FF;
+}
+
+table, th, td {
+    border: 1px solid #1179e1;
+    padding: 5px;
+}
+
+th {
+    background-color: #0969ca;
+    color: white;
+}
+
+.actions {
+    text-align: right;
+}

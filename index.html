@@ -1,0 +1,89 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+         <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Calculateur de Coût de Voyage</title>
+       <link rel="stylesheet" href="styles.css">
+       <script defer src="scriptVersion1.js"></script>
+   </head>
+   <body>
+       <header>
+           <h1>Calculateur du Coût de Voyage</h1>
+       </header>
+       <main>
+        <h3>Nombre d'adultes</h3>
+        <td><input type="text"name="liste1" id="liste1" value=""></td>
+        <!--<select name="liste1" id="liste1">
+            <option value="">nombre Adulte</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="5">4</option>
+            <option value="5">5</option>
+        </select>-->
+        <h3>Nombre d'enfants</h3>
+        <select name="liste2" id="liste2">
+            <option value="">Nombre enfants</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <h3>Nombre de chambre</h3>
+        <select name="liste3" id="liste3">
+            <option value="">Nombre chambres</option>
+            <option value="500">1</option>
+            <option value="700">2</option>
+            <option value="900">3</option>
+            <option value="1000">4</option>
+            <option value="1200">5</option>
+        </select>
+        <h3>Durée de voyage</h3>
+        <select name="liste4" id="liste4">
+            <option value="">Nombre semaines</option>
+            <option value="1000">1 semaine</option>
+            <option value="1400">2 semaines</option>
+            <option value="1700">3 semaines</option>
+            <option value="2000">4 semaines</option>
+        </select>
+    
+    
+        
+    
+        <h3>Catégorie d'hôtel</h3>
+        <input type="radio" name="liste5" id="3Etoile" value="350" checked>3 étoiles<br>
+        <input type="radio" name="liste5" id="4Etoile" value="450" >4 étoiles<br>
+        <input type="radio" name="liste5" id="5Etoile" value="500" >5 étoiles<br>
+       
+       
+       
+        <h3>Choisir parmis ces extras</h3>
+        
+        <input type="checkbox"  name="liste6" id="loc" value="140">Location de voiture<br>
+        <input type="checkbox" name="liste6" id="voy" value="500">Voyage en première class<br>
+        <input type="checkbox" name="liste6" id="ter" value="200">terrain de golf<br>
+        <input type="checkbox" name="liste6" id="cuis" value="350">cuisinette<br>
+    
+        <br><br>
+        
+        <h2>Le montant total de la réservation</h2>
+        <input type="text" id="total" value="$0.00" readonly>
+        <input type="button" value="Affecter et calculer" onclick="calculerCoutVoyage()"><br>
+    
+        
+    
+        
+        <br><br><br>
+    
+        <input type="button"  onclick=" afficherDetail ()" value="AfficherDétail_Réservation"> <br/>
+       
+        <div id="tableContainer"></div>
+           </section>
+       </main>
+   </body>
+   </html>
+   
